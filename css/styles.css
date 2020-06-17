@@ -74,6 +74,17 @@ h6 {
   padding: 0;
 }
 
+/* Задаю параметры для спрятанных элементов*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*Задаю всем заголовкам цвет*/
 .title {
   color: var(--title-text-color);
@@ -212,6 +223,8 @@ h6 {
   border: 0;
   border-radius: 4px;
 
+  cursor: pointer;
+
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 
@@ -241,9 +254,6 @@ h6 {
 }
 
 /* Features - спрячем пока полностью заголовок секции */
-.hidden.section__title {
-  display: none;
-}
 
 .features-list__item {
   display: flex;
@@ -495,6 +505,7 @@ h6 {
 .filter__item:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  cursor: pointer;
 }
 
 .filter__item:not(:last-child) {
