@@ -289,7 +289,20 @@ h6 {
 }
 
 /* Декорируем список Features иконками*/
-.features-list__item::before {
+.features-list__icon {
+  margin-bottom: 30px;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  border-radius: 4px;
+
+  background-color: var(--secondary-bg-color);
+}
+
+/* .features-list__item::before {
   content: "";
   height: 120px;
   border-radius: 4px;
@@ -298,9 +311,9 @@ h6 {
   background-color: var(--secondary-bg-color);
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
-.antenna::before {
+/* .antenna::before {
   background-image: url(../images/svg-icons/antenna.svg);
 }
 
@@ -312,7 +325,7 @@ h6 {
 }
 .astronaut::before {
   background-image: url(../images/svg-icons/astronaut.svg);
-}
+} */
 
 /* Benefits */
 
@@ -351,7 +364,9 @@ h6 {
   padding-bottom: 24px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+
   background-color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .photo {
@@ -548,6 +563,10 @@ h6 {
 
 .works {
   flex-wrap: wrap;
+}
+
+.works-card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .works-card:nth-child(n + 4) {
