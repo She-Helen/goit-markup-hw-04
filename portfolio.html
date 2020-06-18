@@ -41,13 +41,24 @@
         </nav>
         <ul class="contacts-list list">
           <li class="contacts-list__item">
-            <a href="mailto:info@devstudio.com" class="contacts-list__link link"
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts-list__link link"
+              aria-label="Написать на электорнную почту info@devstudio.com"
+              ><svg class="contacts-icon" width="16" height="11.2">
+                <use href="./images/symbol-defs.svg#envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="contacts-list__item">
-            <a href="tel:+380961111111" class="contacts-list__link link"
-              >+38 096 111 11 11</a
+            <a
+              href="tel:+380961111111"
+              class="contacts-list__link link"
+              aria-label="Позвонить по номеру +380961111111"
+              ><svg class="contacts-icon" width="10" height="14.94">
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -245,7 +256,7 @@
     </main>
     <!-- Футер -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <address class="address-block">
           <a href="./index.html" class="logo"
             >Web <span class="logo__text_inverse">Studio</span></a
@@ -269,38 +280,42 @@
         <div class="subscribe-block">
           <!-- Призыв -->
           <b class="subscribe">присоединяйтесь</b>
-          <ul class="socials list">
+          <ul class="socials list footer-socials">
             <li class="socials__item">
               <a
                 href=""
                 aria-label="ссылка на Instagram"
-                class="socials__link link"
-                >Instagram</a
-              >
+                class="socials__link link footer-socials__link"
+                ><svg class="socials-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#instagram"></use></svg
+              ></a>
             </li>
             <li class="socials__item">
               <a
                 href=""
                 aria-label="ссылка на Twitter"
-                class="socials__link link"
-                >Twitter</a
-              >
+                class="socials__link link footer-socials__link"
+                ><svg class="socials-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#twitter"></use></svg
+              ></a>
             </li>
             <li class="socials__item">
               <a
                 href=""
                 aria-label="ссылка на Facebook"
-                class="socials__link link"
-                >Facebook</a
-              >
+                class="socials__link link footer-socials__link"
+                ><svg class="socials-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#facebook"></use></svg
+              ></a>
             </li>
             <li class="socials__item">
               <a
                 href=""
                 aria-label="ссылка на LinkedIn"
-                class="socials__link link"
-                >LinkedIn</a
-              >
+                class="socials__link link footer-socials__link"
+                ><svg class="socials-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#linkedin"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
@@ -310,6 +325,9 @@
           <!-- Форма подписки (пока не размечаем) -->
           <button type="button" class="button subscribe__button">
             Подписаться
+            <svg class="send-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#send"></use>
+            </svg>
           </button>
         </div>
       </div>

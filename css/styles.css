@@ -374,9 +374,22 @@ h6 {
   margin-bottom: 16px;
 }
 
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: var(--border-icon-color);
+}
+
 .socials__link:hover,
 .socials__link:focus {
-  color: var(--accent-color);
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 .socials {
@@ -388,14 +401,13 @@ h6 {
   margin-right: 10px;
 }
 
-/* Размечаем место для иконок соц-сетей пока без контента*/
-/*  width: 44px;
-  height: 44px;
-  border: 1px solid var(--border-icon-color);
-  border-radius: 50%; */
+/* Размечаем иконки соц-сетей */
+.socials-icon {
+  fill: currentColor;
+}
 
 /* Clients*/
-/* задаем фон для будущей картинки*/
+
 .clients-list__link {
   display: flex;
   align-items: center;
@@ -409,6 +421,7 @@ h6 {
 
   color: var(--border-icon-color);
 }
+
 .clients-list__logo {
   fill: currentColor;
 }
@@ -426,7 +439,7 @@ h6 {
 
   background-color: var(--footer-bg-color);
 }
-.footer > .container {
+.footer-container {
   align-items: baseline;
 
   margin-bottom: 28px;
@@ -466,6 +479,12 @@ h6 {
   line-height: 1.14;
   text-transform: uppercase;
 }
+
+.footer-socials__link {
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .subscribe__button {
   display: flex;
   justify-content: center;
