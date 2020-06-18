@@ -178,7 +178,16 @@ h6 {
 }
 
 .contacts-list__link {
+  display: flex;
+  align-items: center;
+
   color: var(--primary-text-color);
+}
+
+.contacts-icon {
+  margin-right: 10px;
+
+  fill: currentColor;
 }
 
 /* Hero */
@@ -386,19 +395,28 @@ h6 {
   border-radius: 50%; */
 
 /* Clients*/
-/* задаем фон для будущей картинке*/
+/* задаем фон для будущей картинки*/
 .clients-list__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 170px;
   height: 90px;
+
   border: 1px solid var(--border-icon-color);
   border-radius: 4px;
 
-  color: var(--primary-text-color);
+  color: var(--border-icon-color);
 }
+.clients-list__logo {
+  fill: currentColor;
+}
+
 .clients-list__link:hover,
 .clients-list__link:focus {
   color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 /* Footer */
@@ -454,14 +472,9 @@ h6 {
   align-items: center;
 }
 
-.subscribe__button::after {
-  content: "";
-  width: 24px;
-  height: 24px;
+.send-icon {
   margin-left: 10px;
-  background-image: url(../images/svg-icons/icon-send.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: currentColor;
 }
 
 .copyright {
