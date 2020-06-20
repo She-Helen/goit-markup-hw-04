@@ -92,9 +92,7 @@ h6 {
 
 /* Logo */
 .logo {
-  display: block;
-  width: 153px;
-  height: 31px;
+  display: inline-block;
 
   color: var(--accent-color);
 
@@ -102,6 +100,7 @@ h6 {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
+  line-height: 1.2;
   text-decoration: none;
 }
 
@@ -119,12 +118,14 @@ h6 {
 }
 
 .container {
-  display: flex;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.page-header__container {
+  display: flex;
 }
 
 .site-nav,
@@ -144,7 +145,7 @@ h6 {
 
 .nav-list__link,
 .contacts-list__link {
-  display: block;
+  display: inline-block;
   padding-bottom: 32px;
   padding-top: 32px;
 
@@ -258,7 +259,8 @@ h6 {
   padding-bottom: 94px;
 }
 
-.list.container {
+.cards {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -455,8 +457,8 @@ h6 {
   background-color: var(--footer-bg-color);
 }
 .footer-container {
+  display: flex;
   align-items: baseline;
-
   margin-bottom: 28px;
 }
 
@@ -528,8 +530,9 @@ h6 {
 
 /*Portfolio*/
 .filter {
-  margin-bottom: 50px;
+  display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter__item {
