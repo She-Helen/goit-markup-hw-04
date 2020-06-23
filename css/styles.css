@@ -114,7 +114,9 @@ h6 {
 .page-header {
   border-bottom: 1px solid #ececec;
 }
-
+.page-header_main {
+  border-bottom: 1px solid transparent;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -154,7 +156,6 @@ h6 {
 
 .nav-list__link {
   color: var(--title-text-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .nav-list__link:hover,
@@ -364,7 +365,8 @@ h6 {
   border-bottom-right-radius: 4px;
 
   background-color: var(--primary-white-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .photo {
@@ -550,6 +552,8 @@ h6 {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   cursor: pointer;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .filter__item:not(:last-child) {
@@ -562,8 +566,10 @@ h6 {
   flex-wrap: wrap;
 }
 
-.works-card:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.works-card__link:hover,
+.works-card__link:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .works-card:nth-child(n + 4) {
