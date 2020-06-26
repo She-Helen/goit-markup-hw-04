@@ -42,6 +42,10 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
+
+  min-width: 320px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .list {
@@ -186,7 +190,7 @@ body {
 
 /* Hero */
 .hero {
-  max-width: 1600px;
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -200,6 +204,7 @@ body {
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .hero-block {
